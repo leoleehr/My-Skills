@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI HUB STYLE GIF"
+  short_description: "依十六張參考製作分類地圖、流程比較、速查表與路線動態資訊圖"
+  default_prompt: "請用 $ai-hub-style-gif 將我的主題製作成 AI HUB STYLE GIF，附完整靜態圖。"
