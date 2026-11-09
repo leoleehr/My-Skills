@@ -1,20 +1,25 @@
 ---
 name: humanizer-en
-version: 3.1.1
-user-invocable: true
-argument-hint: "<English text or file path to humanize>"
-description: |
-  Remove signs of AI-generated writing from English text: inflated significance, promotional tone, vague attributions, em dash overuse, rule of three, AI vocabulary, filler. Based on Wikipedia's "Signs of AI writing" plus local patterns.
-  Use when English prose should be humanized, de-AI'd, or audited for AI tells, even when the request itself is in Chinese. Route by the language of the text: Traditional Chinese goes to humanizer-tw.
+description: 'Remove signs of AI-generated writing from English text: inflated significance,
+  promotional tone, vague attributions, em dash overuse, rule of three, AI vocabulary,
+  filler. Based on Wikipedia''s "Signs of AI writing" plus local patterns.
+
+  Use when English prose should be humanized, de-AI''d, or audited for AI tells, even
+  when the request itself is in Chinese. Route by the language of the text: Traditional
+  Chinese goes to humanizer-tw.
+
+  '
 license: MIT
-compatibility: any-agent
 allowed-tools:
-  - Read
-  - Write
-  - Edit
-  - Grep
-  - Glob
-  - AskUserQuestion
+- Read
+- Write
+- Edit
+- Grep
+- Glob
+- AskUserQuestion
+metadata:
+  legacy-agent-fields: '{"version": "3.1.1", "user-invocable": true, "argument-hint":
+    "<English text or file path to humanize>", "compatibility": "any-agent"}'
 ---
 
 # Humanizer: Remove AI Writing Patterns

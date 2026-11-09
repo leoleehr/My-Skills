@@ -1,12 +1,16 @@
 ---
 name: humanizer-tw
-version: "1.3.1"
-description: |
-  去除中文文字的 AI 生成痕跡（時代開場白、連接詞濫用、互聯網黑話、翻譯腔、結尾套話），並把簡轉繁殘留與中國用語在地化成台灣寫法。
-  使用時機：使用者貼一段像 AI 寫的中文要潤色、去機器味；校對 OpenCC 簡轉繁或從簡體翻譯來的文件；要求「只標問題不改」的診斷；提供自己的文章樣本要求對齊文風。純節奏琢磨交給 good-writing-tw，英文交給 humanizer-en。
+description: '去除中文文字的 AI 生成痕跡（時代開場白、連接詞濫用、互聯網黑話、翻譯腔、結尾套話），並把簡轉繁殘留與中國用語在地化成台灣寫法。
+
+  使用時機：使用者貼一段像 AI 寫的中文要潤色、去機器味；校對 OpenCC 簡轉繁或從簡體翻譯來的文件；要求「只標問題不改」的診斷；提供自己的文章樣本要求對齊文風。純節奏琢磨交給
+  good-writing-tw，英文交給 humanizer-en。
+
   觸發詞：/humanizer-tw、去 AI 味、去機器味、簡轉繁校對、OpenCC 漏網、在地化、這段哪裡像 AI。
-user-invocable: true
-argument-hint: "<article text or file path to humanize>"
+
+  '
+metadata:
+  legacy-agent-fields: '{"version": "1.3.1", "user-invocable": true, "argument-hint":
+    "<article text or file path to humanize>"}'
 ---
 
 # Humanizer-tw: 去除中文 AI 寫作痕跡

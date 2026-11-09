@@ -1,12 +1,16 @@
 ---
 name: good-writing-tw
-version: "1.2.1"
-description: |
-  中文好寫作：依 Paul Graham、余光中、王鼎鈞的原則改寫既有中文，處理氣口、句長錯落、句尾、贅字與強動詞，讓文字更順、更有節奏。
-  使用時機：使用者說「潤稿」「改寫」「讓文字更順」「改善文筆」，或提供文章要求潤飾。技術文件（README、API 文件）走保守模式，不動結構化列舉與術語。去 AI 味與中國用語交給 humanizer-tw。
+description: '中文好寫作：依 Paul Graham、余光中、王鼎鈞的原則改寫既有中文，處理氣口、句長錯落、句尾、贅字與強動詞，讓文字更順、更有節奏。
+
+  使用時機：使用者說「潤稿」「改寫」「讓文字更順」「改善文筆」，或提供文章要求潤飾。技術文件（README、API 文件）走保守模式，不動結構化列舉與術語。去 AI
+  味與中國用語交給 humanizer-tw。
+
   觸發詞：/good-writing-tw、/潤稿、潤稿、改寫、文筆、技術文件潤飾。
-user-invocable: true
-argument-hint: "<article text or file path to rewrite>"
+
+  '
+metadata:
+  legacy-agent-fields: '{"version": "1.2.1", "user-invocable": true, "argument-hint":
+    "<article text or file path to rewrite>"}'
 ---
 
 # 中文好寫作
