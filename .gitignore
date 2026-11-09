@@ -1,0 +1,13 @@
+# Claude 技能雲端同步快取（自動產生，含外部與前公司技能副本，不納入版控）
+synced/
+
+# 編輯工具的回收桶暫存
+.trash/
+
+# 常見暫存與快取
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+.DS_Store
+Thumbs.db
