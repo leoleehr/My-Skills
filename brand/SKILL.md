@@ -1,11 +1,18 @@
 ---
 name: brand
-description: Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides.
-argument-hint: "[update|review|create] [args]"
+description: Brand voice, visual identity, messaging frameworks, asset management,
+  brand consistency. Activate for branded content, tone of voice, marketing assets,
+  brand compliance, style guides.
 metadata:
   author: claudekit
-  version: "1.0.0"
+  version: 1.0.0
+  legacy-agent-fields: '{"argument-hint": "[update|review|create] [args]"}'
 ---
+
+## Source and tool scope
+
+Source attribution and license evidence are recorded in [SOURCE.md](SOURCE.md). Preserve approved brand assets and read project-specific paths before writing. Helpers that only print an external command have not performed image analysis; report only outputs actually produced.
+
 
 # Brand
 

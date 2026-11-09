@@ -229,7 +229,8 @@ function main() {
   console.log(`✅ Updated: ${DESIGN_TOKENS_JSON}`);
 
   // Regenerate CSS
-  const generateScript = path.resolve(process.cwd(), GENERATE_TOKENS_SCRIPT);
+  const projectGenerator = path.resolve(process.cwd(), GENERATE_TOKENS_SCRIPT);
+  const generateScript = fs.existsSync(projectGenerator) ? projectGenerator : path.join(__dirname, 'generate-tokens.cjs');
   if (fs.existsSync(generateScript)) {
     try {
       execFileSync('node', [generateScript, '--config', DESIGN_TOKENS_JSON, '-o', DESIGN_TOKENS_CSS], {

@@ -20,7 +20,7 @@ SCRIPTS = Path(__file__).resolve().parent.parent
 SCRIPT = SCRIPTS / "sync-brand-to-tokens.cjs"
 BRAND_STARTER = SCRIPTS.parent / "templates" / "brand-guidelines-starter.md"
 TOKENS_STARTER = (
-    SCRIPTS.parent.parent / "design-system" / "templates" / "design-tokens-starter.json"
+    SCRIPTS.parent / "templates" / "design-tokens-starter.json"
 )
 
 
@@ -50,3 +50,5 @@ def test_sync_parses_bundled_starter_template(tmp_path):
     assert primitive["primary"]["500"]["$value"] == "#2563EB"
     assert primitive["secondary"]["500"]["$value"] == "#8B5CF6"
     assert primitive["accent"]["500"]["$value"] == "#10B981"
+
+    assert (tmp_path / "assets/design-tokens.css").is_file()
