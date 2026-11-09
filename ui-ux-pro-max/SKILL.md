@@ -2,6 +2,16 @@
 name: ui-ux-pro-max
 description: "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data: 79 searchable styles (50 active), 192 product palettes and reasoning profiles, 74 font pairings, 119 UX guidelines, 105 icons, 17 GSAP presets, 25 chart types, and 22 stacks."
 ---
+
+## Standalone maintenance and source
+
+Source evidence and restoration notes: [SOURCE.md](SOURCE.md). The restored scripts are local to this folder:
+
+- scripts/refresh-google-fonts.py and scripts/refresh-icon-catalog.py: reviewed offline catalog refreshes; use --help for explicit inputs and destinations. Live font fetching is optional and requires a user-selected workflow.
+- scripts/evaluate-relevance.py: deterministic relevance fixtures and regression floors. The historical fingerprint gate can reject a relocated or changed runtime; do not lower floors, rewrite approvals or claim a passing gate to hide that failure. --no-thresholds is diagnostic measurement only.
+
+Existing data dates are source verification dates, not a claim that all frameworks are current. Verify version-sensitive recommendations against primary documentation for the actual project.
+
 # UI/UX Pro Max - Design Intelligence
 
 UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data: 79 searchable styles (50 active), 192 product palettes and reasoning profiles, 74 font pairings, 119 UX guidelines, 105 icons, 17 GSAP presets, 25 chart types, and 22 stacks.

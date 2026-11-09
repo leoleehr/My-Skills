@@ -1,12 +1,23 @@
 ---
 name: ui-styling
-description: Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-based visual designs. Use when building user interfaces, implementing design systems, creating responsive layouts, adding accessible components (dialogs, dropdowns, forms, tables), customizing themes and colors, implementing dark mode, generating visual designs and posters, or establishing consistent styling patterns across applications.
-argument-hint: "[component or layout]"
-license: MIT
+description: Create beautiful, accessible user interfaces with shadcn/ui components
+  (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-based
+  visual designs. Use when building user interfaces, implementing design systems,
+  creating responsive layouts, adding accessible components (dialogs, dropdowns, forms,
+  tables), customizing themes and colors, implementing dark mode, generating visual
+  designs and posters, or establishing consistent styling patterns across applications.
+license: Apache-2.0
 metadata:
+  original-license-field: MIT
   author: claudekit
-  version: "1.0.0"
+  version: 1.0.0
+  legacy-agent-fields: '{"argument-hint": "[component or layout]"}'
 ---
+
+## Component installer scope
+
+Read the target project's package manager, framework versions, components.json and existing component files before using scripts/shadcn_add.py. Start with --dry-run and an explicit --project-root. Install only components needed for the requested implementation; use --all or --overwrite only when the user requested the broader change. Project dependency changes needed for an authorized UI implementation may proceed without an extra permission question. Installing this skill itself does not authorize changing unrelated projects. The helper's pinned fallback is historical; check official compatibility before selecting a CLI version for a new project.
+
 
 # UI Styling Skill
 
