@@ -6,8 +6,8 @@ description: 把「人才 VS 咖啡」系列的原子筆排線八格漫畫單頁
 # 原子筆八格漫畫 → 動態 GIF（eight-panel-comic-gif）
 
 依據：2026-11-17 Maggie 八格漫畫動態 GIF 的實際製作過程（任務 T-20261117-05／07／08／09／11／12），定稿為
-`output/人才VS咖啡_八格漫畫/Maggie_codex/gif_v5/Maggie原子筆版v13b_動態_定稿.gif`。
-本檔所有數字都從程式、log、驗證輸出讀出；查不到的寫「未確認」。下文相對路徑以 `output/人才VS咖啡_八格漫畫/Maggie_codex/` 為根。
+`<漫畫資料夾>/<人物>_codex/gif_v5/Maggie原子筆版v13b_動態_定稿.gif`。
+本檔所有數字都從程式、log、驗證輸出讀出；查不到的寫「未確認」。下文相對路徑以 `<漫畫資料夾>/<人物>_codex/` 為根。
 
 > 一句話原則：**生圖模型只負責無字靜態底圖（以及必要時的局部變體，例如閉眼）；動作全部由程式把「部位」整塊旋轉／平移，文字是獨立圖層、每幀鎖定。**
 
@@ -213,13 +213,13 @@ description: 把「人才 VS 咖啡」系列的原子筆排線八格漫畫單頁
 - 規格（尺寸、fps、調色盤、品牌色、字型、5 MB）與閉眼 prompt 的寫法。
 
 **一定要換**
-- 底圖與組版：Avery 目前以 `output/人才VS咖啡_八格漫畫/Avery_codex/pen_v4/` ＋ `compose_brand_avery_v4.py` 為準。它沒有 `layout_v13()`，要先補一個回傳 `slot/src/poly/bbox/mask/box/cx` 的函式（或在 GIF 程式裡用它的 `POLYS`、`CROP_X` 自己算）。
+- 底圖與組版：Avery 目前以 `<漫畫資料夾>/<人物>_codex/pen_v4/` ＋ `compose_brand_avery_v4.py` 為準。它沒有 `layout_v13()`，要先補一個回傳 `slot/src/poly/bbox/mask/box/cx` 的函式（或在 GIF 程式裡用它的 `POLYS`、`CROP_X` 自己算）。
 - 每格的 `Mover` 多邊形、軸心、權重範圍、補底方向、`refine` 顏色類別：依新底圖重新描（先用 `--debug` 輸出遮罩圖，檢查有沒有圈到臉或背景直線）。
 - `color_classes()` 的門檻是依 Maggie 的芥末黃調的（`Y` 類）；Avery 是鼠尾草綠，要重調。
 - 眨眼：重新請 Codex 生閉眼變體、重新對位、重新量每隻眼睛的 `up/lo` 點、設定 `BLINK_CENTERS`。
 - 臉部檢查表 `FACES`：依新底圖人工標註每張臉。
 - 保護區座標（白板圖示、箭頭方框之類）。
-- 輸出資料夾與檔名（例如 `Avery_codex/gif_v1/`），參考靜態單頁改成 Avery 的單頁 PNG。
+- 輸出資料夾與檔名（例如 `<人物>_codex/gif_v1/`），參考靜態單頁改成 Avery 的單頁 PNG。
 
 **先決定再動手**
 - 每格挑什麼動作：照第 5 節——動作要看得出來，但 HR 的手部動作要小、不搖頭（要動就眨眼）、手臂不切開、臉不被切到、不用局部變形。

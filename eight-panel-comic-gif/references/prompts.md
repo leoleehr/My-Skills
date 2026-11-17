@@ -1,6 +1,6 @@
 # Codex 生圖 prompt 原文摘錄
 
-全部逐字從本機檔案複製（英文原文不改）。路徑相對於 `output/人才VS咖啡_八格漫畫/`。
+全部逐字從本機檔案複製（英文原文不改）。路徑相對於 `<漫畫資料夾>/`。
 指令：`codex exec --skip-git-repo-check "<下列 prompt>"`，並附上參考圖（附圖用的參數 log 沒有記錄，**未確認**）。
 
 > 底圖 img02～img06 最早的生圖 prompt（Mia 篇 pen_v1～v4 時期）**本機沒有保存，未確認**。下列是找得到的全部。
@@ -9,7 +9,7 @@
 
 ## A. 新圖（無字底圖）
 
-### A1. 第 1 格：童年搬家（`Maggie_codex/pen_v6/prompt_img01.txt`；對應 log 未保存，模型未確認）
+### A1. 第 1 格：童年搬家（`<人物>_codex/pen_v6/prompt_img01.txt`；對應 log 未保存，模型未確認）
 
 ```
 Generate ONE new image with your image generation tool (do not write code, do not draw with scripts). Save nothing else.
@@ -26,7 +26,7 @@ IMPORTANT: absolutely no text, letters, numbers, Chinese characters, house numbe
 After generating, reply only with the saved image path.
 ```
 
-### A2. 第 7 格：一個月後演練（`Mia_codex/pen_v5/prompt_img07.txt`；主角當時叫 Mia，後改名 Maggie；log 未保存）
+### A2. 第 7 格：一個月後演練（`<人物>_codex/pen_v5/prompt_img07.txt`；主角當時叫 Mia，後改名 Maggie；log 未保存）
 
 ```
 Generate ONE new image with your image generation tool (do not write code, do not draw with scripts). Save nothing else.
@@ -44,7 +44,7 @@ IMPORTANT: absolutely no text, letters, numbers, Chinese characters, signs or sp
 After generating, reply only with the saved image path.
 ```
 
-### A3. 第 8 格：手沖＋高架棚床（`Mia_codex/pen_v5/prompt_img08.txt`；log 未保存）
+### A3. 第 8 格：手沖＋高架棚床（`<人物>_codex/pen_v5/prompt_img08.txt`；log 未保存）
 
 ```
 Generate ONE new image with your image generation tool (do not write code, do not draw with scripts). Save nothing else.
@@ -63,7 +63,7 @@ After generating, reply only with the saved image path.
 
 ## B. 改圖（以舊底圖為基礎重繪局部）
 
-### B1. HR 年輕化（`Maggie_codex/pen_v9/prompt_img05.txt`；log `pen_v9/codex_img05.log`）
+### B1. HR 年輕化（`<人物>_codex/pen_v9/prompt_img05.txt`；log `pen_v9/codex_img05.log`）
 
 ```
 Use the image generation tool to create an edited version of the attached illustration (landscape, same aspect ratio as the attached image, about 1672x941).
@@ -73,7 +73,7 @@ No text, no letters, no numbers anywhere in the image.
 Do not run any shell commands; only generate the image.
 ```
 
-### B2. HR 拿掉眼鏡、改油頭（`Maggie_codex/pen_v10/prompt_img05.txt`；log：`gpt-6-luna`、effort medium、Codex v0.166.0）
+### B2. HR 拿掉眼鏡、改油頭（`<人物>_codex/pen_v10/prompt_img05.txt`；log：`gpt-6-luna`、effort medium、Codex v0.166.0）
 
 ```
 Use the image generation tool to create an edited version of the attached illustration (landscape, same aspect ratio as the attached image).
@@ -86,7 +86,7 @@ No text, no letters, no numbers anywhere in the image.
 Do not run any shell commands; only generate the image.
 ```
 
-### B3. HR 臉部改成原子筆排線畫風（`Maggie_codex/pen_v12/prompt_hr.txt`；img05、img06 共用；log：`gpt-6-luna`、effort medium、Codex v0.166.0）——**定稿底圖 pen_v12 用的就是這份**
+### B3. HR 臉部改成原子筆排線畫風（`<人物>_codex/pen_v12/prompt_hr.txt`；img05、img06 共用；log：`gpt-6-luna`、effort medium、Codex v0.166.0）——**定稿底圖 pen_v12 用的就是這份**
 
 ```
 Use the image generation tool to create an edited version of the attached illustration (landscape, same aspect ratio as the attached image).
@@ -101,7 +101,7 @@ log 備註：`pen_v12/codex_img05.log` 有一行 `ERROR codex_core::tools::route
 
 ---
 
-## C. 動畫用變體：五人閉眼（`Maggie_codex/gif_v3/_scratch/codex_blink.log`，2026-11-17）
+## C. 動畫用變體：五人閉眼（`<人物>_codex/gif_v3/_scratch/codex_blink.log`，2026-11-17）
 
 log 檔頭：`OpenAI Codex v0.169.0`、`model: gpt-6.1-sol`、`sandbox: read-only`、`reasoning effort: low`。輸入 `pen_v12/img02.png`，輸出存成 `gif_v3/_scratch/codex_closed.png`（1536×1024，和原圖同尺寸）。
 

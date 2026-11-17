@@ -8,7 +8,7 @@
 | 用途 | 檔案 | 說明 |
 |---|---|---|
 | 無字底圖 | `pen_v12/img01～08.png` | 第 N 格來源底圖；`img05_v10.png`、`img06_v10.png` 為重繪前的備份 |
-| 生圖紀錄 | `pen_v12/prompt_hr.txt`、`pen_v12/codex_img05.log`、`codex_img06.log`；`pen_v10/`、`pen_v9/`、`pen_v6/prompt_img01.txt`；`../Mia_codex/pen_v5/prompt_img07/08.txt` | prompt 原文見 `prompts.md` |
+| 生圖紀錄 | `pen_v12/prompt_hr.txt`、`pen_v12/codex_img05.log`、`codex_img06.log`；`pen_v10/`、`pen_v9/`、`pen_v6/prompt_img01.txt`；`../<人物>_codex/pen_v5/prompt_img07/08.txt` | prompt 原文見 `prompts.md` |
 | 組版（定稿） | `compose_brand_v13b.py` | `RAW/POLYS/ORDER/LINES/CROP_X/PAGE_WHERE`、`cover()`、`caption()`、`page_captions()`、`number_badge()`、`header()`、`footer()`、`layout_v13()`（別名 `layout_v13b`） |
 | 組版（前版） | `compose_brand_v12.py`（原版面）、`compose_brand_v13.py`（第三列鏡像） | |
 | 腳本 | `腳本_Maggie八格漫畫_v13.md` | 角色外型表、逐格畫面與對白 |
